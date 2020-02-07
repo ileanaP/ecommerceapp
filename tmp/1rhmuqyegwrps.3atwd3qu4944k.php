@@ -1,0 +1,28 @@
+<div class="card shadow mb-4">
+	<div class="card-header py-3">
+	  <h6 class="m-0 font-weight-bold text-primary">Users</h6>
+	  <div style="width:100%;">
+		<button class="btn btn-danger" style="float: right;" data-action="addUser">Add user</button>
+	  </div>
+	</div>
+
+	<div>			
+		<div class="card-body">
+		  <div class="table-responsive">
+			<table class="table table-striped table-bordered" id="DTUser" width="100%" cellspacing="0">
+			  <thead>
+				<tr>
+				  <th>Id</th>
+				  <th>Email</th>
+				  <th>Permission</th>
+				  <th>&nbsp;</th>
+				</tr>
+			  </thead>
+			</table>
+		  </div>
+		</div>
+	</div>
+</div>
+
+<?php echo $this->render('app/view/modals/modal_edit_user.html',NULL,get_defined_vars(),0); ?>
+<?php echo $this->render('app/view/modals/modal_user_delete.html',NULL,get_defined_vars(),0); ?>

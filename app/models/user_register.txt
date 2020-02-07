@@ -1,0 +1,37 @@
+<?php
+
+	$log_in_password = $_POST['password'];
+	$log_in_email = $_POST['email'];
+	
+
+	$user_check_query = "Select * FROM user where email = '$log_in_email'";
+			
+			$check_result = mysqli_query($conn, $user_check_query);
+				
+			$user_checker = mysqli_fetch_assoc($check_result);
+			
+			var_dump ($user_checker);
+			
+			if($user_checker)// if exists
+			{
+				$user_pass = "Select password FROM user where email = '$email'";
+				
+				$check_pass_result = mysqli_query($conn, $check_pass);
+				
+				$check_pass = mysqli_fetch_assoc($check_pass_result);
+				
+				var_dump ($check_pass);
+				
+				if(!($check_pass == $log_in_password))
+				{
+				  echo "Wrong Password !";
+				}
+				
+			}
+			else
+			{
+			   echp "User is not registered !";
+			}
+
+
+?>

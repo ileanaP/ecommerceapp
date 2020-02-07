@@ -1,0 +1,189 @@
+body {font-family: Arial, Helvetica, "Varela Round", sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* classes for width */
+
+.width-10  { width:10%; }
+.width-20  { width:20%; }
+.width-30  { width:30%; }
+.width-40  { width:40%; }
+.width-50  { width:50%; }
+.width-60  { width:60%; }
+.width-70  { width:70%; }
+.width-80  { width:80%; }
+.width-90  { width:90%; }
+.width-100 { width:100%; }
+
+/* modals */
+
+.js-delete-ticket-modal .modal-confirm {		
+  color: #636363;
+  width: 400px;
+}
+.js-delete-ticket-modal .modal-confirm .modal-content {
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+      text-align: center;
+  font-size: 14px;
+}
+.js-delete-ticket-modal .modal-confirm .modal-header {
+  border-bottom: none;   
+      position: relative;
+}
+.js-delete-ticket-modal .modal-confirm h4 {
+  text-align: center;
+  font-size: 26px;
+  margin: 30px 0 -10px;
+}
+.js-delete-ticket-modal .modal-confirm .close {
+      position: absolute;
+  top: -5px;
+  right: -2px;
+}
+.js-delete-ticket-modal .modal-confirm .modal-body {
+  color: #999;
+}
+.js-delete-ticket-modal .modal-confirm .modal-footer {
+  border: none;
+  text-align: center;		
+  border-radius: 5px;
+  font-size: 13px;
+  padding: 10px 15px 25px;
+}
+.js-delete-ticket-modal .modal-confirm .modal-footer a {
+  color: #999;
+}
+.js-delete-ticket-modal .modal-confirm .icon-box {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 50%;
+  z-index: 9;
+  text-align: center;
+  border: 3px solid #f15e5e;
+}
+.js-delete-ticket-modal .modal-confirm .icon-box i {
+  color: #f15e5e;
+  font-size: 46px;
+  display: inline-block;
+  margin-top: 13px;
+}
+  .js-delete-ticket-modal .modal-confirm .btn {
+      color: #fff;
+      border-radius: 4px;
+  background: #60c7c1;
+  text-decoration: none;
+  transition: all 0.4s;
+      line-height: normal;
+  min-width: 120px;
+      border: none;
+  min-height: 40px;
+  border-radius: 3px;
+  margin: 0 5px;
+  outline: none !important;
+  }
+.js-delete-ticket-modal .modal-confirm .btn-info {
+      background: #c1c1c1;
+  }
+  .js-delete-ticket-modal .modal-confirm .btn-info:hover, .modal-confirm .btn-info:focus {
+      background: #a8a8a8;
+  }
+  .js-delete-ticket-modal .modal-confirm .btn-danger {
+      background: #f15e5e;
+  }
+  .js-delete-ticket-modal .modal-confirm .btn-danger:hover, .modal-confirm .btn-danger:focus {
+      background: #ee3535;
+  }
+.trigger-btn {
+  display: inline-block;
+  margin: 100px auto;
+}
+
+.modal-dialog{
+  overflow-y: initial !important;
+}
+.modal-body{
+  max-height:350px;
+  overflow-y: auto;
+}
+
+.searchButton { z-index:-10000; background-color: pink; }
+
+.vl {
+  border-left: 1px solid grey;
+}
+
+.stripped { padding:0; margin:0; }
+
+/* TICKET */
+.bigModal                 { padding-top:0px !important; }
+.bigModal .modal-dialog   { max-width:92% !important; height:90% !important; }
+.bigModal .modal-content  { width:100%; height:100%; }
+.bigModal .modal-body     { max-height:90% !important; }
+/*.bigModal .modal-body hr  { margin-top:0.5rem; margin-bottom:0.5rem; }
+.bigModal .modal-body p   { margin-top:0.5rem; margin-bottom:0.5rem; }*/
+
+
+.ticket-info { padding:30px; }
+.ticket-info .fa-address-book { margin:10px; }
+.ticket-info .fa-address-book:before {color:darkorange;}
+.ticket-info-header { background-color: #ffe6cc; }
+.ticket-info-header a, .ticket-info-header a:hover {color:darkblue;}
+
+.pers-btn-list {
+  padding: 0px 20px;
+}
+
+.pers-btn-list a { 
+  background-color:#D3D3D3; 
+  padding:5px 10px; 
+  color:gray; 
+  border-radius:10px; 
+  margin:0px 5px;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.pers-btn-list a:hover {
+  background-color: gray;
+  color:white;
+}

@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+ <body>
+	<form action="api.php" method="get">
+		
+		<label>Enter Order ID:</label><br />
+			<input type="text" name="ticket_id" placeholder="Enter ticket ID">
+			<br /><br />
+			<button type="submit" name="submit" >Submit</button>
+	</form>
+  </body>
+</html>
+
+ <?php
+ 
+	
+	
+	<!-- <!-- f3->require('lib/base.php');
+	
+	$f3->route('POST /rest/indexApi.html',
+	function($f3){
+		
+	});
+	
+	$f3->run(); -->
+	
+	
+	if( isset($_GET['ticket_id']) $$ !empty($_GET['ticket_id']) )
+	{
+		$ticket_id = $_POST['ticket_id'];
+		
+		
+			
+	} -->
+	
+	
+	
+	//$ticket_id, $ticket_status, $about_ticket, $ticket_start_date,
+	//$ticket_last_update, $ticket_answare, $conversation_id, $users_involved, $conversation_messages
+	//
+	echo "<table>";
+	echo "<tr><td>Ticket ID:</td><td>$result->ticket_id</td></tr>";
+	echo "<tr><td>Ticket Status:</td><td>$result->ticket_status</td></tr>";
+	echo "<tr><td>About Ticket:</td><td>$result->about_ticket</td></tr>";
+	echo "<tr><td>Created at:</td><td>$result->ticket_start_date</td></tr>";
+	echo "<tr><td>Last updated at:</td><td>$result->ticket_last_update</td></tr>";
+	echo "<tr><td>Answare at:</td><td>$result->ticket_answare</td></tr>";
+	echo "<tr><td>Conversation ID at:</td><td>$result->conversation_id</td></tr>";
+	echo "<tr><td>Users who answared:</td><td>$result->users_involved</td></tr>";
+	echo "<tr><td>Messages:</td><td>$result->conversation_messages</td></tr>";
+	echo "</table>";
+	
+ ?>
